@@ -1,0 +1,180 @@
+@font-face {
+  font-family: Noto;
+  src: url("../fonts/NotoSerif-Regular.ttf") format("truetype"),
+    url("../fonts/NotoSerif-Thin.ttf") format("truetype"),
+    url("../fonts/NotoSerif-SemiBold.ttf") format("truetype"),
+    url("../fonts/NotoSerif-Bold.ttf") format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Configuração */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto";
+  background-color: #f5f5f5;
+}
+
+/* Reseta o peso da fonte, padding e margens dos elementos h1, h2 e h3*/
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+/* Reseta as seguintes propriedades dos elementos ul */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove padding desnessario dos elementos li */
+li {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Header */
+/* ---------------------------------------------------------------------------------- */
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.75rem;
+}
+
+.logo span {
+  font-weight: 500;
+  color: #ff0037;
+}
+
+.header-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------- */
+/* Hero */
+/* ---------------------------------------------------------------------------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.hero-greeting {
+  font-size: 8rem;
+}
+
+.hero-about-wrapper {
+  width: 60%;
+}
+
+.hero-about-me {
+  padding-top: 1.5rem;
+}
+
+.hero-links {
+  display: flex;
+  padding: 2rem 0;
+  gap: 5rem;
+}
+
+.hero-link {
+  font-size: 1.75rem;
+}
+
+.hero-link a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-link svg {
+  height: 2rem;
+  width: 2rem;
+  opacity: 0.5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Estilos compatilhados */
+/* -------------------------------------------------------------------------- */
+.site-section {
+  padding: 5rem 0;
+  width: 80%;
+}
+
+.section-title {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.section-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.75rem;
+  padding: 1.25rem 0;
+}
+
+.section-item-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.section-item-link svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #000;
+  opacity: 0.5;
+}
+
+.section-title-icon {
+  color: #ff0037;
+}
+
+.source-link {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+footer p {
+  font-size: 1.5rem;
+  text-align: center;
+}
