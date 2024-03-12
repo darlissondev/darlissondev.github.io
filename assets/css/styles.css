@@ -52,6 +52,12 @@ svg {
   height: 1rem;
 }
 
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
 .site-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -173,6 +179,41 @@ svg {
   font-size: 1.5rem;
 }
 
+/* ------------------------------------------------------------------------------------------ */
+/* Fomulario de contato */
+/* ------------------------------------------------------------------------------------------ */
+
+.form-control {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 1.25rem 0;
+  gap: 1rem;
+}
+
+.form-control label {
+  font-size: 1.75rem;
+}
+
+.form-control input {
+  padding: 0.5rem 0.5rem;
+}
+
+.form-control textarea {
+  resize: none;
+}
+
+.form-btn {
+  text-transform: uppercase;
+  background-color: #333;
+  font-weight: 500;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Footer */
 /* ------------------------------------------------------------------------------------------ */
 footer p {
   font-size: 1.5rem;
