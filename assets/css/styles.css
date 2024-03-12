@@ -52,6 +52,10 @@ svg {
   height: 1rem;
 }
 
+button {
+  padding: 0;
+}
+
 input,
 button,
 textarea {
@@ -60,6 +64,7 @@ textarea {
 
 .site-wrapper {
   max-width: 1000px;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -71,6 +76,8 @@ textarea {
   align-items: center;
   min-height: 80px;
   justify-content: space-between;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0/3%);
+  box-shadow: 0px 15px 10px -15px rgb(0 0 0/3%);
 }
 
 .logo {
@@ -90,6 +97,36 @@ textarea {
 .nav-link {
   font-size: 1.5rem;
 }
+
+.menu-btn,
+.close-menu-btn {
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem;
+  background: none;
+}
+
+.close-menu-btn {
+  position: absolute;
+  z-index: 20;
+  right: 1rem;
+
+  transform: translateX(150%);
+  visibility: hidden;
+  transition: all ease 0.5s;
+}
+
+.menu-btn svg,
+.close-menu-btn svg {
+  width: 3.5rem;
+  height: auto;
+}
+
+.close-menu-btn {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------------------------- */
@@ -112,6 +149,7 @@ textarea {
 
 .hero-about-me {
   padding-top: 1.5rem;
+  line-height: 150%;
 }
 
 .hero-links {
@@ -218,4 +256,78 @@ textarea {
 footer p {
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Querie para telas pequenas */
+/* ------------------------------------------------------------------------------------------ */
+@media (max-width: 600px) {
+  .site-wrapper {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: #f5f5f5f8;
+    padding: 8rem 1rem;
+    z-index: 10;
+    right: 0;
+    top: 0;
+
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: all ease 0.5s;
+  }
+
+  .header-links {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-about-wrapper {
+    width: 100%;
+  }
+
+  .hero-about-me {
+    padding-top: 0;
+  }
+
+  .hero-links {
+    gap: 0;
+    justify-content: space-evenly;
+  }
+
+  .site-section {
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) {
+  .menu-btn {
+    display: none;
+  }
+}
+/* Classes dos eventos do menu mobile */
+
+.show-navbar {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.show-close-menu-btn {
+  transform: translateX(0);
+  visibility: visible;
 }
