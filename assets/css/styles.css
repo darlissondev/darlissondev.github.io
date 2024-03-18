@@ -1,8 +1,6 @@
 @font-face {
   font-family: Noto;
   src: url("../fonts/NotoSerif-Regular.ttf") format("truetype"),
-    url("../fonts/NotoSerif-Thin.ttf") format("truetype"),
-    url("../fonts/NotoSerif-SemiBold.ttf") format("truetype"),
     url("../fonts/NotoSerif-Bold.ttf") format("truetype");
 }
 
@@ -112,6 +110,7 @@ textarea {
   right: 1rem;
 
   transform: translateX(150%);
+
   visibility: hidden;
   transition: all ease 0.5s;
 }
@@ -120,11 +119,6 @@ textarea {
 .close-menu-btn svg {
   width: 3.5rem;
   height: auto;
-}
-
-.close-menu-btn {
-  transform: translateX(100%);
-  visibility: hidden;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -271,7 +265,8 @@ footer p {
     display: block;
     position: absolute;
     width: 100%;
-    background-color: #f5f5f5f8;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.03);
     padding: 8rem 1rem;
     z-index: 10;
     right: 0;
@@ -320,8 +315,8 @@ footer p {
     display: none;
   }
 }
-/* Classes dos eventos do menu mobile */
 
+/* Classes dos eventos do menu mobile */
 .show-navbar {
   transform: translateX(0);
   visibility: visible;
