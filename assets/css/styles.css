@@ -314,6 +314,11 @@ footer p {
   .menu-btn {
     display: none;
   }
+
+  .close-menu-btn {
+    visibility: hidden;
+    transform: translateX(0);
+  }
 }
 
 /* Classes dos eventos do menu mobile */
